@@ -156,7 +156,7 @@ h2 {
         transition: 0.3s ease-in-out all;
 
         &:hover {
-            background-color: #ff7b0017;
+            background-color: #ff7b0007;
             transform: translateY(-5px);
             
             h3, p {
@@ -164,7 +164,7 @@ h2 {
             }
 
             .ico {
-                transform: scale(1.1);
+                transform: scale(1.2);
             }
         }
     }
@@ -198,7 +198,72 @@ h2 {
     }
 }
 
+#agents {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
 
+    .outer {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .inner {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 500px){
+            flex-direction: column-reverse;
+        }
+    }
+
+    .left, .right {
+        flex: 1 0 40rem;
+        align-self: stretch;
+        margin: 2rem;
+
+        @media screen and (max-width: 500px){
+            margin: unset;
+        }
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        font-size: 2rem;
+        
+        
+        span {
+            color: $primary;
+        }
+
+        @media screen and (max-width: 500px){
+            font-size: unset;
+        }
+    }
+}
+
+#onboarding {
+    display: none;
+    .title {
+        p {
+            // padding: 0 5rem;
+            margin-top: 1rem;
+        }
+    }
+}
 
 
 
