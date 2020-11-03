@@ -116,6 +116,10 @@ body {
           flex: 1 0 40rem;
 }
 
+#header .right {
+  padding: 2rem;
+}
+
 @media screen and (max-width: 500px) {
   html {
     font-size: 50%;
