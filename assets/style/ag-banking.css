@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding: 10vh;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #FAFAF9;
+  position: relative;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.text-light {
+  color: #f5f5f5;
+}
+
+.text-dark {
+  color: #383838;
+}
+
+#nav {
+  background-color: #001E89;
+  position: relative;
+}
+
+#nav .navbar-nav a:nth-of-type(4) {
+  margin-left: auto;
+}
+
+#nav .navbar-nav a:nth-of-type(1) {
+  margin-left: auto;
+}
+
+#header {
+  min-height: 90vh;
+  background: url("../img/header-bg.svg") no-repeat center bottom;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#header h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+#header p {
+  margin: 3rem 0;
+}
+
+#header .ctas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+#header .ctas a:nth-of-type(1) {
+  background-color: #FF7A00;
+  padding: 1rem 3rem;
+  color: #f5f5f5;
+  border-radius: 20px 20px 20px 0;
+}
+
+#header .ctas a:nth-of-type(2) {
+  color: #FF7A00;
+}
+
+#header .mouse {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#header svg {
+  overflow: visible;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  #header {
+    background: radial-gradient(50% 50% at 50% 50%, #052BB3 0%, #001E89 100%);
+  }
+  #header .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  #header .right img {
+    max-width: 50rem;
+  }
+}
+/*# sourceMappingURL=ag-banking.css.map */
