@@ -117,8 +117,5 @@ body {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  #header .right img {
-    max-width: 50rem;
-  }
 }
 /*# sourceMappingURL=ag-banking.css.map */

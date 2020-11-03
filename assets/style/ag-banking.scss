@@ -110,15 +110,12 @@ body {
     }
 
     #header {
-        background: radial-gradient(50% 50% at 50% 50%, #052BB3 0%, #001E89 100%);;
+        background: radial-gradient(50% 50% at 50% 50%, #052BB3 0%, #001E89 100%);
 
         .right {
             display: flex;
             justify-content: center;
             align-items: flex-end;
-        }
-        .right img {
-            max-width: 50rem;
         }
     }
 }
