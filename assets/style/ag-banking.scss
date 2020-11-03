@@ -99,6 +99,16 @@ body {
     svg {
         overflow: visible;
     }
+
+    .inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .left, .right {
+        flex: 1 0 40rem;
+    }
 }
 
 
@@ -111,6 +121,10 @@ body {
 
     #header {
         background: radial-gradient(50% 50% at 50% 50%, #052BB3 0%, #001E89 100%);
+
+        .inner {
+            flex-direction: column-reverse;
+        }
 
         .right {
             display: flex;
