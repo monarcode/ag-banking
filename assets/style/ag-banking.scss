@@ -41,6 +41,16 @@ body {
     color: $dark;
 }
 
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $dark;
+    text-align: center;
+
+    span {
+        color: $primary;
+    }
+}
 
 #nav {
     background-color: $secondary;
@@ -114,6 +124,81 @@ body {
         padding: 2rem;
     }
 }
+
+#offer {
+    min-height: 80vh;
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+
+    .outer {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .offers {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .offer {
+        background-color: #f2f2f2;
+        padding: 1.2rem;
+        border-radius: 20px 20px 20px 0;
+        display: flex;
+        height: 140px;
+        flex: 1 0 40rem;
+        margin: 1.2rem;
+        cursor: pointer;
+        transition: 0.3s ease-in-out all;
+
+        &:hover {
+            background-color: #ff7b0017;
+            transform: translateY(-5px);
+            
+            h3, p {
+                color: $primary;
+            }
+
+            .ico {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .offer:nth-child(5){
+        flex: 0 1 50rem;
+    }
+
+    .inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .ico {
+        align-self: flex-start;
+        margin-right: 1.6rem;
+        width: 6rem !important;
+        height: 6rem !important;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: bolder;
+        color: $dark;
+    }
+
+    p {
+        color: $dark;
+    }
+}
+
+
 
 
 

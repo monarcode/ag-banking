@@ -31,6 +31,17 @@ body {
   color: #383838;
 }
 
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #383838;
+  text-align: center;
+}
+
+h2 span {
+  color: #FF7A00;
+}
+
 #nav {
   background-color: #001E89;
   position: relative;
@@ -118,6 +129,115 @@ body {
 
 #header .right {
   padding: 2rem;
+}
+
+#offer {
+  min-height: 80vh;
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#offer .outer {
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#offer .offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#offer .offer {
+  background-color: #f2f2f2;
+  padding: 1.2rem;
+  border-radius: 20px 20px 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 140px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40rem;
+          flex: 1 0 40rem;
+  margin: 1.2rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out all;
+  transition: 0.3s ease-in-out all;
+}
+
+#offer .offer:hover {
+  background-color: #ff7b0017;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+#offer .offer:hover h3, #offer .offer:hover p {
+  color: #FF7A00;
+}
+
+#offer .offer:hover .ico {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#offer .offer:nth-child(5) {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50rem;
+          flex: 0 1 50rem;
+}
+
+#offer .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#offer .ico {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-right: 1.6rem;
+  width: 6rem !important;
+  height: 6rem !important;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+#offer h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #383838;
+}
+
+#offer p {
+  color: #383838;
 }
 
 @media screen and (max-width: 500px) {
