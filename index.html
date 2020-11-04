@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/style/main.css">
     <link rel="stylesheet" href="./assets/style/ag-banking.css">
     <link rel="stylesheet" href="./assets/style/animations.css">
@@ -34,7 +35,7 @@
     <!-- header -->
     <header id="header" class="p-3">
         <div class="container h-100">
-            <div class="inner">
+            <div class="inner" data-aos="fade">
                 <div class="left">
                     <h1 class="text-light">Join our Agency Banking Network</h1>
                     <p class="text-light">Billions of cash withdrawals and multiple transactions across 36 states every day through our Kolomoni Agents. You can join our growing network and be your own boss. </p>
@@ -148,30 +149,30 @@
     <!-- offers -->
     <section id="offer" class="offer">
         <div class="container outer">
-            <h2>What <span>We Offer</span></h2>
+            <h2 data-aos="fade">What <span>We Offer</span></h2>
             <div class="offers">
-                <div class="offer">
+                <div class="offer" data-aos="fade-up" data-aos-delay="200">
                     <img src="./assets/img/cashout.svg" alt="cashout" class="ico">
                     <div class="inner">
                         <h3>Cash Out</h3>
                         <p>This is withdrawal transactions that attract low charges </p>
                     </div>
                 </div>
-                <div class="offer">
+                <div class="offer" data-aos="fade-up" data-aos-delay="200">
                     <img src="./assets/img/airtime-data.svg" alt="cashout" class="ico">
                     <div class="inner">
                         <h3>Airtime / Data</h3>
                         <p>You can buy airtime on all networks and earn a 1% chargeback as commission.</p>
                     </div>
                 </div>
-                <div class="offer">
+                <div class="offer" data-aos="fade-up" data-aos-delay="200">
                     <img src="./assets/img/cabletv.svg" alt="cashout" class="ico">
                     <div class="inner">
                         <h3>Cable TV Subscription</h3>
                         <p>You can perform cable TV subscriptions and earn N5O cashback on all amounts.</p>
                     </div>
                 </div>
-                <div class="offer">
+                <div class="offer" data-aos="fade-up" data-aos-delay="200">
                     <img src="./assets/img/utilities.svg" alt="cashout" class="ico">
                     <div class="inner">
                         <h3>Utility Bill</h3>
@@ -179,7 +180,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="offer">
+                <div class="offer" data-aos="fade-up" data-aos-delay="200">
                     <img src="./assets/img/transfer.svg" alt="cashout" class="ico">
                     <div class="inner">
                         <h3>Transfer</h3>
@@ -194,13 +195,13 @@
     <!-- agents -->
     <section id="agents" class="agents">
         <div class="container outer">
-            <h2>Become An <span>Agent</span> or <span>Super Agent</span></h2>
+            <h2 data-aos="fade">Become An <span>Agent</span> or <span>Super Agent</span></h2>
             <div class="inner">
-                <div class="left">
+                <div class="left" data-aos="fade-up">
                     <p> To become a Kolomoni agent, you need to request for a Kolomoni MPOS. You will pay an onboarding fee of N15,000 in order to acquire one Kolomoni MPOS terminal. The Kolomoni app also allows our Agents to carry out transactions at lower charges and also earn commissions on every transaction.</p>
                     <p><span>Super Agents</span> are Kolomoni's partner/ambassador with a minimum of 10 Kolomoni agents under them. Kolomoni Master Agents are required to purchase a minimum of 10 MPOS devices at N10,000 each on behalf of the agents and provide them with first level support.</p>
                 </div>
-                <div class="right">
+                <div class="right" data-aos="fade-up">
                     <img src="./assets/img/agent-illus.svg" alt="agent" class="img-fluid">
                 </div>
             </div>
@@ -211,16 +212,16 @@
     <!-- onboarding -->
     <section id="onboarding" class="onboarding">
         <div class="container outer">
-            <div class="title text-center">
+            <div class="title text-center" data-aos="fade">
                 <h2>Agent <span>OnBoarding</span></h2>
                 <p>MPOS (Mobile Point of Sales) devices are used by our mobile money agents for cashout 
                     (withdrawal) transactions. Every Kolomoni agent needs one to be a part of our agency banking network.</p>
             </div>
             <div class="inner">
-                <div class="left">
+                <div class="left" data-aos="fade-up">
                     <img src="./assets/img/mpos.svg" alt="" class="img-fluid">
                 </div>
-                <div class="right">
+                <div class="right" data-aos="fade-up">
                     <h3>Using the Kolomoni <span>MPOS Device</span></h3>
                     <ol>
                         <li>Once you get your Kolomoni MPOS Device,  register your Kolomoni account</li>
@@ -292,5 +293,12 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 600,
+            easing: 'ease-in-out'
+        });
+    </script>
 </body>
 </html>
