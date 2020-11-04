@@ -41,7 +41,7 @@ body {
     color: $dark;
 }
 
-h2 {
+h2,h3 {
     font-size: 3rem;
     font-weight: bold;
     color: $dark;
@@ -256,11 +256,46 @@ h2 {
 }
 
 #onboarding {
-    display: none;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+
+    .outer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .right, .left {
+        flex: 1 0 40rem;
+        margin: 2rem;
+    }
+
     .title {
         p {
             // padding: 0 5rem;
             margin-top: 1rem;
+        }
+    }
+
+    .right {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    ol {
+        color: $dark;
+
+        li {
+            margin: 1rem 0;
+            list-style-position: inside;
         }
     }
 }
